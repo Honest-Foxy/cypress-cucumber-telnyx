@@ -1,0 +1,25 @@
+{
+  "name": "cypress-cucumber-telnyx",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "cypress:run": "npx cypress run",
+    "cypress:run:chrome": "npx cypress run --config-file chrome.config.js --browser chrome",
+    "cypress:open": "npx cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^10.6.0"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^12.1.0",
+    "cucumber": "^6.0.7",
+    "cypress-mochawesome-reporter": "^3.2.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "/cypress/e2e/step-definitions/**.js",
+    "nonGlobalStepDefinitions": false
+  }
+}
