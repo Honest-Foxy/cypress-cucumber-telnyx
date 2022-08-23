@@ -13,7 +13,7 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: 'https://telnyx.com/',
     pageLoadTimeout: 500000,
-    viewportHeight: 864,
+    viewportHeight: 1244,
     viewportWidth: 1536,
     retries: {
       runMode: 3,
@@ -25,7 +25,7 @@ module.exports = defineConfig({
     reporterOptions: {
       reportDir: "cypress/reports",
       charts: true,
-      reportPageTitle: "My Test Suite",
+      reportPageTitle: "Cypress cucumber telnyx report",
       embeddedScreenshots: true,
       inlineAssets: true
     },
